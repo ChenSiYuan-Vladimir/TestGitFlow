@@ -71,12 +71,6 @@ function App() {
     })
   }
 
-  const handleDelete = () => {
-    petDao.deletePet().then((res) => {
-      dispatch(petAction.deletePet(res.data.data))
-    })
-  }
-
   // const handleAdd = () => {
   //   petDao.addPet().then((res) => {
   //     dispatch(petAction.syncPets(res.data.data))
