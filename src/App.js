@@ -125,30 +125,4 @@ function App() {
     })();
   }
 
-  
-
-  const handleModify = () => {
-    petDao.modifyPet().then((res) => {
-      dispatch(petAction.modifyPet(res.data.data))
-    })
-  }
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>{t('welcome to React')}</h2>
-        <button onClick={handleFetch}>fetch</button>
-        <button onClick={handleDelete}>delete</button>
-        <button onClick={handleModify}>modify</button>
-        {script()}
-        <div>
-      <div id='form' style={{width:500,margin:"auto"}}></div>
-
-    </div>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+export default App
